@@ -1,6 +1,8 @@
 class KefkaTrip:
     time = 15
-trip1 = KefkaTrip()
-trip2 = KefkaTrip()
-print('kefkan retki kesti'+ str(trip1.time))
-print('kefkan retki kesti'+ str(trip2.time))
+    def __init__(self, time_parameter):
+        self.time = time_parameter
+        print('kefkan retki kesti'+ str(self.time))
+
+trip1 = KefkaTrip(20)
+trip2 = KefkaTrip(40)
